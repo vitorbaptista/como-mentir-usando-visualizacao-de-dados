@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Como Mentir Usando Visualização de Dados</title>
+
+		<meta name="description" content="Apresentação sobre técnicas de visualização de dados usadas para maquiar informações">
+		<meta name="author" content="Vítor Baptista">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<link rel="stylesheet" href="css/c3.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+<div class="slides">
+  <section>
+    <h1>Como mentir usando visualização de dados</h1>
+  </section>
+  <section>
+    <section>
+      <h2>Quem sou eu?</h2>
+    </section>
+    <section>
+      <h2>Vítor Baptista</h2>
+    </section>
+    <section>
+      <h2>Open Knowledge Foundation</h2>
+      <p>
+        Parte do time do <a href="http://ckan.org" target="_blank">CKAN</a> e
+        <a href="http://openspending.org" target="_blank">OpenSpending</a>
+      </p>
+    </section>
+    <section>
+      <h2>Transparência Hacker</h2>
+      <p><a href="https://groups.google.com/forum/#!forum/thackday" target="_blank">https://groups.google.com/forum/#!forum/thackday</a></p>
+    </section>
+    <section>
+      <h2>Grupo DataViz</h2>
+      <p><a href="http://www.dataviz.com.br" target="_blank">http://www.dataviz.com.br</a></p>
+      <p><a href="https://groups.google.com/forum/#!forum/visualizacao" target="_blank">https://groups.google.com/forum/#!forum/visualizacao</a></p>
+    </section>
+  </section>
+  <section>
+    <h2>Como assim... mentir?</h2>
+  </section>
+  <section>
+    <section>
+      <h2>Mudando a escala</h2>
+    </section>
+    <section>
+      <img class="stretch" src="img/foxnews-bush-expires.jpg">
+    </section>
+    <section>
+      <h2>A escala começa em 34</h>
+      <div id="barras-fora-do-zero"></div>
+    </section>
+    <section>
+      <h2>Com a escala começando do zero</h2>
+      <div id="barras-no-zero"></div>
+    </section>
+    <section>
+      <img class="stretch" src="img/foxnews-unemployment-fake.jpg">
+    </section>
+    <section>
+      <img class="stretch" src="img/foxnews-unemployment-correct.jpg">
+    </section>
+    <section>
+      <img class="stretch" src="img/foxnews-unemployment-best.jpg">
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Comparando áreas</h2>
+    </section>
+    <section>
+      <img class="stretch" src="img/bubbles-societe-generale.png">
+      <p>Considere que a bolha maior representa US$ 80 bilhões. Quanto representa a menor?</p>
+    </section>
+    <section>
+      <img class="stretch" src="img/barras-societe-generale.png">
+      <p>E agora?</p>
+    </section>
+    <section>
+      <p>Ela representa US$ 26 bilhões</p>
+      <p><small>Acertou?</small></p>
+    </section>
+    <section>
+      <img class="stretch" src="img/area-societe-generale.png">
+      <p>Normalmente, ao invés de comparar áreas, comparamos alturas</p>
+    </section>
+    <section>
+      <p>E se, ao invés de codificar os valores na área, usássemos a altura?</p>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Distorcendo a perspectiva</h2>
+    </section>
+    <section>
+      <img class="stretch" src="img/iphone-marketshare-0.png">
+    </section>
+    <section>
+      <img class="stretch" src="img/iphone-marketshare-1.png">
+    </section>
+    <section>
+      <img class="stretch" src="img/iphone-marketshare-2.png">
+    </section>
+    <section>
+      <img class="stretch" src="img/iphone-marketshare-3.png">
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Extrapolando conclusões</h2>
+    </section>
+    <section>
+      <h2>Cidades Mais Violentas do Mundo</h2>
+      <img class="stretch" src="img/ciudades-mas-violentas.jpg">
+    </section>
+    <section>
+      <h2>O que é violência?</h2>
+      <ul>
+        <li class="fragment">Homicídios</li>
+        <li class="fragment">Assaltos</li>
+        <li class="fragment">Acidentes de Trânsito</li>
+        <li class="fragment">Estupros</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Usam taxa de homicídios por 100 mil habitantes como representando violência</h2>
+    </section>
+    <section>
+      <h2>Mapa da Violência 2013</h2>
+      <img class="stretch" src="img/mapa-da-violencia-2013.jpg">
+    </section>
+    <section>
+      <h2>São Paulo é a capital mais segura do país</h2>
+      <p>Rio de Janeiro é a quinta</p>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Controlando as pesquisas</h2>
+    </section>
+    <section>
+      <img class="stretch" src="img/colgate.jpg">
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Qual a melhor forma de codificar a informação?</h2>
+      <p>
+        <small><a href="http://www.cs.ubc.ca/~tmm/courses/cpsc533c-04-spr/readings/cleveland.pdf" target="_blank">Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods. William S. Cleveland; Robert McGill (1984)</a></small>
+      </p>
+    </section>
+    <section>
+      <img class="stretch" src="img/cleveland-mcgill.jpg">
+    </section>
+  </section>
+  <section>
+    <h2>Referências</h2>
+    <ul>
+      <li>How to Lie With Statistics</li>
+      <li><a href="http://www.thefunctionalart.com" target="_blank">The Functional Art</a></li>
+      <li><a href="https://secure.cs.uvic.ca/twiki/pub/Research/Chisel/ComputationalAestheticsProject/cleveland.pdf" target="_blank">Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods</a></li>
+      <li><a href="http://portalcorreio.uol.com.br/noticias/mundo/america-latina/2013/03/28/NWS,221749,9,290,NOTICIAS,2190-JOAO-PESSOA-10A-CIDADE-VIOLENTA-MUNDO-APONTA-PESQUISA.aspx" target="_blank">João Pessoa é a 10a cidade mais violenta do mundo</a></li>
+      <li><a href="http://tempestadesneurais3.blogspot.com.br/2008/10/estatstica-no-mente-mas-voc-pode-mentir.html" target="_blank">A estatística não mente, mas você pode mentir usando a estatística</a></li>
+      <li><a href="https://visualisingadvocacy.org/blog/disinformation-visualization-how-lie-datavis" target="_blank">Disinformation Visualization: How to lie with datavis</a></li>
+      <li><a href="http://pt.slideshare.net/vis4/making-data-visualizations-a-survival-guide" target="_blank">Making Data Visualizations - A Survival Guide</a></li>
+      <li><a href="http://www.mapadaviolencia.org" target="_blank">Mapa da Violência</a></li>
+      <li><a href="http://flowingdata.com/category/statistics/mistaken-data/" target="_blank">FlowingData's Mistaken Data</a></li>
+    </ul>
+  </section>
+  <section>
+    <h2>Obrigado!</h2>
+    <p><a href="mailto:vitor@vitorbaptista.com">vitor@vitorbaptista.com</a></p>
+    <p><a href="http://vitorbaptista.com" target="_blank">http://vitorbaptista.com</a></p>
+    <p><a href="http://twitter.com/vitorbaptista">@vitorbaptista</a></p>
+  </section>
+</div>
+
+      </div>
+
+    </div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+		<script src="js/c3.min.js"></script>
+
+		<link rel="stylesheet" href="css/graficos.css">
+		<script src="js/graficos.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
